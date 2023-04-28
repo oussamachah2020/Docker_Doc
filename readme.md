@@ -1,5 +1,9 @@
 # Docker
 
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/72669865/235264310-3532fb83-3b60-43e1-8f43-5f6c3e156c7a.png"/>
+</p>
+
 ### This is a Docker documentation
 #### It will contain a docker explanation and some commands
 
