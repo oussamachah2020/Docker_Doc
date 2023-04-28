@@ -30,7 +30,31 @@ docker image
 ```bash
 docker run <image name>
 ```
-> ! Note: this command will block the terminal by showing the log of the running container to avoid add `-d` before the `<image name>`
+> ! Note: this command will block the terminal by showing the log of the running container to avoid that add `-d` before the `<image name>`
 ```bash
 docker run -d <image name>
 ```
+
+#### To list you containers simply run 
+```bash
+docker ps
+```
+
+#### to stop a container run
+```bash
+docker stop <container id>
+```
+
+##### Let's say you want to run a container on a port on you local machine, docker container runs that on a host port (80 for example). To change that run
+```bash
+docker run -d -p 9000:80 <image name>
+```
+
+> Command explanation
+- `-d`: detatch mode so it doeasn't block the terminal
+- `-p` or `--pubilsh`: to publish your container on a localhost port
+- `9000`: the local port
+- `80`: the port taken by the container
+- `image name`: the name of the existed image that we want to run
+
+> Note: if you try to run an unexisted image docker will pull by default from the registry
