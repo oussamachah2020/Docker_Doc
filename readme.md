@@ -21,3 +21,16 @@
 docker pull <image name>
 ```
 > ! the last command will pull the lastes version.
+
+#### After we got the image we want, you can check with 
+```bash
+docker image
+```
+#### To run the image you can simply run
+```bash
+docker run <image name>
+```
+> ! Note: this command will block the terminal by showing the log of the running container to avoid add `-d` before the `<image name>`
+```bash
+docker run -d <image name>
+```
