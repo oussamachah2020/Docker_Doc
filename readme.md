@@ -4,7 +4,6 @@
     <img src="https://user-images.githubusercontent.com/72669865/235264378-45035787-8cd5-45f7-add5-72b4c562f7b2.png"/>
 </p>
 
-
 ### This is a Docker documentation
 #### It will contain a docker explanation and some commands
 
@@ -63,3 +62,32 @@ docker run -d -p 9000:80 <image name>
 - `image name`: the name of the existed image that we want to run
 
 > Note: if you try to run an unexisted image docker will pull by default from the registry
+
+#### You can also run a container and give it a name to use it instead of the ID
+```bash
+docker run -d --name <container name> -p 9000:80 <image name>
+```
+
+- 3.How to dockerize you app
+#### On the root of your app, create a `dockerfile` file, it have the following structure
+> let's take a simple node app as an example
+
+```docker
+FROM node:18
+
+COPY package.json /app/
+COPY src /app/
+
+WORKDIR /app
+
+RUN npm install
+
+CMD ["node", "server.js"]
+```
+#### now let's explain the code
+
+- `FROM`: Keyword that allows us to use an image from docker hub in our docker container
+- `COPY`: Keyword that allows us to copy a file wihtout recreate it inside the host
+- `WORKDIR`: Keyword that indicates the working directory in which docker container files will be in most cases it is `/app/` a directory totally independent from you machine
+- `RUN`: Keyword that allows us to run command, like you do inside the terminal
+- `CMD`: Keyword that allows us to run a command that will run our up, it takes an array of strings that forms the command
