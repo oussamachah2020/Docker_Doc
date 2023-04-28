@@ -91,3 +91,10 @@ CMD ["node", "server.js"]
 - `WORKDIR`: Keyword that indicates the working directory in which docker container files will be in most cases it is `/app/` a directory totally independent from you machine
 - `RUN`: Keyword that allows us to run command, like you do inside the terminal
 - `CMD`: Keyword that allows us to run a command that will run our up, it takes an array of strings that forms the command
+
+#### Now to build this image and turns into a usable one, you can run
+```bash
+docker build -t name:version .
+```
+- `-t` or `--tag`: an option to give a tag to your built image
+- `.`: path where you want that build in that case we indicated the current working directory but you can indicate wherever you want
