@@ -16,7 +16,7 @@
 ### Docker Commands!
 
 #### We have a Docker Hub, it is a docker registry that contains many images with different versions
-##### to pull an image from `Docker Hub` we have to ways
+##### to pull an image from `Docker Hub` we have two ways
 ```bash
   docker pull <image name>:version
 ```
