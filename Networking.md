@@ -1,9 +1,8 @@
 # Docker Networking
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/72669865/236332665-5e266807-0c92-4e7f-a805-2aaa86805db7.png"/>
+  <img src="https://user-images.githubusercontent.com/72669865/236333061-6316c440-5782-4867-9c61-50b6342ab672.png"/>
 </p>
-
 
 ### - The Default Bridge
 
