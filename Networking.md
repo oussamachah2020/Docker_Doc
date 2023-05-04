@@ -58,3 +58,5 @@ the new option here is
 `--network`: it allows to specify the network type you want to use
 
 > It is better to specify an IP ADDRESS for each container , because docker chooses for u if you don't and that may cause a conflict
+
+### To learn more about about Docker networking i recommand this [video](https://youtu.be/bKFMS5C4CG0)
